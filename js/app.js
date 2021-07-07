@@ -1,37 +1,16 @@
-var username = "John";
 var userAge = 17;
-console.log(typeof(username));
-console.log(typeof(userAge));
-console.log(typeof(username));
+var is_subscribed = true;
 
-var statement1 = true;
-var statement2 = true;
-console.log(statement1 || statement2);
-
-var userHeight = 1.6;
-if (userHeight > 2) {
-    console.log("User is tall");
-}else {
-    console.log("User is NOT old enough! He is actually"  + userHeight);
-}
-
-var user = "John";
-var userAge = 26;
-isblonde=true;
-
-if (user == "Jane"){
-    console.log("Nice hair");
-}
-else if(user == "John"){
-    if(userAge < 18){
-        console.log("nice hair");
+if (userAge < 18){
+    if (is_subscribed){
+    console.log("User is under 18 and is subscribed");
+    }else if (!is_subscribed){
+    console.log("User is under 18 and is not subscribed");
     }
-    else if (userAge > 25){
-        console.log("Welcome back");
+}else if (userAge > 18){
+    if (is_subscribed){
+        console.log("User is over 18 and is subscribed");
+    }else if (!is_subscribed) {
+        console.log("User is over 18 and is not subscribed");
     }
-}else {
-    console.log("How do you do");
 }
-
-
-
